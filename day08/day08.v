@@ -1,3 +1,4 @@
+// One Hot Decoder
 module day08
 #(
     parameter   BIN_LEN = 4,
