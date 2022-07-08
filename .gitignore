@@ -1,0 +1,10 @@
+*.vcd
+*.vvp
+*.ys
+*.vscode
+*.dot
+*.dot.pid
+synth.v
+sim_build
+*.xml
+__pycache__
