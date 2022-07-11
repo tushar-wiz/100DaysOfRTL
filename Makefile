@@ -18,7 +18,7 @@ build:
 	touch $(DAY_NAME)/synth.ys
 	cd $(DAY_NAME) && echo "read -vlog2k $(DAY_NAME).v" > synth.ys
 	cd $(DAY_NAME) && echo "hierarchy -top $(DAY_NAME)" >> synth.ys
-	cd $(DAY_NAME) && echo "proc; opt; techmap; opt" >> synth.ys
+	cd $(DAY_NAME) && echo "proc; opt; fsm; opt" >> synth.ys
 	cd $(DAY_NAME) && echo "write_verilog synth.v" >> synth.ys
 	cd $(DAY_NAME) && echo "show -prefix $(DAY_NAME) -colors $(TIME)" >> synth.ys
 
